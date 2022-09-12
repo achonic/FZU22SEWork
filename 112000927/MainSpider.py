@@ -177,7 +177,7 @@ def HandleContentData(Pagei, soup):
     for i in range(0, 3):
         HMTTotalcases.append(GetTheCases(s, HMT[i], None))
 
-    if Pagei != 281:
+    if Pagei != 0:
         for i in range(0, 3):
             DeltaCases.append(str(int(NextCases[i]) - int(HMTTotalcases[i])))
         dfHMTNewCases.loc[df.iloc[Pagei, 1], :] = DeltaCases
@@ -186,9 +186,8 @@ def HandleContentData(Pagei, soup):
         NextCases.append(HMTTotalcases[i])
 
 
-
 #  获取并处理 从开始到现在 的疫情报告
-def Deal_epidemicDaysList(i):
+def Get_Epidemic_Data(i):
     url = df.iloc[i, 2]  # 读取0 ~ 976所有页面的报告
     html = None
     while html is None:
@@ -205,11 +204,9 @@ def Deal_epidemicDaysList(i):
 
     print("已成功爬取至第" + str(i) +"份报告")
 
-def main():
-    #  获取并处理 从开始到现在 的疫情报告列表
-    for i in range(281, nrows+1):
-        Deal_epidemicDaysList(i)
+
+def Deal_EpidemicPost():
+    for i in range(0, nrows+1):
+        Get_Epidemic_Data(i)
 
 
-if __name__ == "__main__":
-    main()
