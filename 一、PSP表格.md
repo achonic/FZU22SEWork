@@ -17,7 +17,7 @@
 * **爬虫和数据统计处理**：分为**爬取数据、处理数据、导入数据**三部分，使用python语言编写。技术栈：爬取数据使用request库向卫健委官网爬取疫情报告文本，处理数据使用beautifulsoup4，对爬取内容解析分割处理，导入数据excel使用pandas库，将处理完的数据自动写入excel中。
 * **数据可视化**：分为**数据请求，后端，前端**三部分，使用python，Vue编写。技术栈：python使用flask库作为web后端，用以导入数据，更新数据，并且接收前端发送的axios数据请求。前端采用Vue，从后端请求疫情数据，结合Echarts图表库进行可视化。前后端分离开发，前端可视化做好之后build编译为静态文件由flask运行。
 
-![8}8CYP68%D{A[3OICL1_3SW.png](https://github.com/achonic/FZU22SEWork/blob/main/112000927/8%7D8CYP68%25D%7BA%5B3OICL1_3SW.png?raw=true)
+![image](https://user-images.githubusercontent.com/39673419/191252643-33d483e6-a038-41e7-9980-58961cb2984f.png)
 
 ### 2.爬虫与数据处理：
 
@@ -227,11 +227,11 @@ import "echarts/map/js/china.js"
 
 2、显示当日中国疫情新增地图
 
-![img](https://raw.githubusercontent.com/achonic/FZU22SEWork/main/112000927/%25_2%7DO%5D%40Z%5D)MM%7B)2FOKEMEKA.png)
+![image](https://user-images.githubusercontent.com/39673419/191252771-80addef1-6f42-4722-b609-0307a6b86965.png)
 
 3、当日各省市新增情况
 
-![UN$I@Y3X1M)_`~B3]AK0`FW.png](https://github.com/achonic/FZU22SEWork/blob/main/112000927/UN$I@Y3X1M)_%60~B3%5DAK0%60FW.png?raw=true)
+![image](https://user-images.githubusercontent.com/39673419/191252810-39599201-c01c-4d85-bc6f-97622368a773.png)
 
 
 
