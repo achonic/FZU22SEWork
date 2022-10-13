@@ -1,0 +1,10 @@
+<!--pages/homepage/homepage.wxml-->
+<view>
+   <view id="tit">
+   <image src="{{titleImageUrl}}" mode="widthFix"></image>
+   </view>
+   <button id="localgame" bindtap="localgame">本地对战</button>
+   <button id="onlinegame" bindtap="onlinegame">联机对战</button>
+   <button id="AIgame" bindtap="AIgame"> 人机对战</button>
+   <button id="gamerule" bindtap="gamerule">游戏规则</button>
+</view>

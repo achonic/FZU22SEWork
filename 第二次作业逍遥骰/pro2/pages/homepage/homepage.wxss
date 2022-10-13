@@ -1,0 +1,24 @@
+/* pages/homepage/homepage.wxss */
+page {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c3ced1;
+}
+#tit{
+  text-align: center;
+  margin-top: 60px;
+}
+#localgame{
+  margin-top: 20px;
+}
+#onlinegame{
+  margin-top: 30px;
+}
+#AIgame{
+  margin-top: 30px;
+}
+#gamerule{
+  margin-top: 30px;
+}

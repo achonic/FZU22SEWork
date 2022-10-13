@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/index/index",
+    "pages/onlineplay/online",
+    "pages/AIgame/AIgame"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "FirstProgram",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

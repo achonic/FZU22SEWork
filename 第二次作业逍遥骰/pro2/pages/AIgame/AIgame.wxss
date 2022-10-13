@@ -1,0 +1,133 @@
+/* pages/AIgame/AIgame.wxss */
+/**index.wxss**/
+#play{
+
+  font-size: 40px;
+}
+#buttontouzi{
+  margin-left: 25px;
+  margin-top: 2%;
+  text-align: center;
+  width:100px;
+  height:42px;
+}
+
+#touzi{
+  width: 50px;
+  height: 50px;
+  margin-top: 5%;
+  margin-left: 40%;
+}
+.referline{
+  margin-top: 8%;
+  margin-bottom: 2%;
+  margin-left: 28%;
+  font-size: 25px;
+}
+.referline2{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 28%;
+  font-size: 25px;
+}
+.l1{
+  margin-right: 9%;
+}
+.middle{
+  margin-top: 2%;
+  margin-left: 20%;
+  display: flex;
+}
+.xline{
+  margin-left: 15%;
+  height: 110px;
+}
+.player1{
+  display: flex;
+}
+.lineplayer1{
+  margin-top: 10%;
+  margin-left: 10px;
+  height: 130px;
+  width: 5px;
+  background : black;
+}
+
+.player2{
+  display: flex;
+}
+.lineplayer2{
+  margin-top: 10%;
+  margin-left: 10px;
+  height: 130px;
+  width: 5px;
+  background : black;
+}
+
+.ninege{
+  display: flex;
+  margin-left: 5%;
+  justify-content : flex-start;
+  flex-wrap: wrap;
+  width : 180px ;
+  height : 180px ;
+  background : pink;
+  border: 4px solid black;
+}
+.ninege .inner{
+  background : gray;
+  width : 58px ;
+  height : 58px ;
+  border : 1px solid #ccc ;
+  }
+ 
+.ninege .inner .ima{
+     width : 58px;
+     justify-content : center;
+     align-items: center;
+  }
+  .ninege2 .inner2 .ima2{
+    width : 58px;
+    justify-content : center;
+    align-items: center;
+ }
+
+.ninege2{
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    justify-content : flex-start;
+    flex-wrap: wrap;
+    width : 180px ;
+    height : 180px ;
+    background : pink;
+    border: 4px solid black;
+  }
+.ninege2 .inner2{
+    background : gray;
+    width : 58px ;
+    height : 58px ;
+    border : 1px solid #ccc ;
+    }
+.GameOverMsg{
+  position: absolute;
+  bottom: 20px;
+  left: 110px;
+}
+.mtext{
+  margin-top: 10%;
+  display: block;
+}
+.btn1{
+  margin-left: 30%;
+  margin-top: 30%;
+  font-size: 20px;
+  
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid rgb(126, 117, 117);
+}
+.etext{
+  margin-top: 20%;
+  font-size: 38px;
+}

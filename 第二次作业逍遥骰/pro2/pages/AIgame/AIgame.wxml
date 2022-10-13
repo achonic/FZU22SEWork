@@ -1,0 +1,63 @@
+<!--index.wxml-->
+
+<view class="referline">
+    <text class="l1">K线</text>
+    <text class="l1">E线</text>
+    <text class="l1">X线</text>
+</view>
+<view class="player1">
+  <view class = 'mtext'>
+    <text style="font-size: 38px;">你：</text>
+    <view bindtap="tuoguan" class='btn1'>
+      托管
+    </view>
+  </view>
+  
+<view class="ninege">
+        
+        <view class='inner' wx:for="{{p1touziImage}}" wx:for-item="NowImage"
+        wx:for-index="index" bindtap="set" data-num="{{mp[index]}}" data-index="{{index}}">
+        <image src='{{NowImage}}' mode="widthFix" class="ima"></image>
+        </view>
+</view>
+
+<view class="lineplayer1" wx:if="{{MyTurn}}"></view>
+</view>
+<view class="middle">
+  <image class="xline" src='/images/line.png' > </image>
+  <image class="xline" src='/images/line.png' > </image>
+  <image class="xline" src='/images/line.png'  > </image>
+  <view id="play">
+  <button bindtap="play" id="buttontouzi">掷骰子</button>
+  <image src='{{touziImage}}'  id="touzi"></image>
+</view>
+</view>
+<view class="player2">
+<text class = 'etext'>AI：</text>
+<view class="ninege2">
+       <view class='inner2' wx:for="{{p2touziImage}}" wx:for-item="NowImage"
+        wx:for-index="index" data-num="{{ep[index]}}" data-index="{{index}}">
+        <image src='{{NowImage}}' mode="widthFix" class="ima2"></image>
+        </view>
+</view>
+<view class="lineplayer2" wx:if="{{EnemyTurn}}"></view>
+</view>
+<view class="referline2">
+    <text class="l1">K线</text>
+    <text class="l1">E线</text>
+    <text class="l1">X线</text>
+</view>
+<view wx:if="{{Gameover}}" class="GameOverMsg">
+    <text>游戏结束，{{winner}}\n</text>
+    <text>你的得分：{{Mscore}}\n</text>
+    <text>AI的得分：{{Escore}}\n</text>
+    <button bindtap="restart">重新开始</button>
+</view>
+
+
+
+
+
+
+
+
